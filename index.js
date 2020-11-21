@@ -173,5 +173,4 @@ const create = () => {
   return colors;
 };
 
-module.exports = create();
-module.exports.create = create;
+exports {create() as default, create};
