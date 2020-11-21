@@ -8,7 +8,8 @@
     "Brian Woodward (https://twitter.com/doowb)",
     "Jason Schilling (https://sourecode.de)",
     "Jon Schlinkert (http://twitter.com/jonschlinkert)",
-    "Jordan (https://github.com/Silic0nS0ldier)"
+    "Jordan (https://github.com/Silic0nS0ldier)",
+    "Brandon Nozaki Miller (https://github.com/RIAEvangelist)"
   ],
   "repository": "doowb/ansi-colors",
   "bugs": {
@@ -21,6 +22,7 @@
     "types/index.d.ts"
   ],
   "main": "index.js",
+  "type": "module",
   "types": "./types/index.d.ts",
   "engines": {
     "node": ">=6"
