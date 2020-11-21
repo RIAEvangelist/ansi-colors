@@ -12,19 +12,25 @@ $ npm install --save ansi-colors-es6
 
 ![image](https://user-images.githubusercontent.com/383994/39635445-8a98a3a6-4f8b-11e8-89c1-068c45d4fff8.png)
 
+![node terminal color examples](https://raw.githubusercontent.com/RIAEvangelist/ansi-colors/master/img/vanilla-test-node-report.PNG)
+
 ## Why use this?
 
 ansi-colors-es6 is _the fastest Node.js library for terminal and browser console styling_. A more performant drop-in replacement for chalk, colors and ansi-colors with no dependencies.
 
+* _Works in the browser as well as the terminal!_
 * _Blazing fast_ - Fastest terminal styling library in node.js, and the browser!
-
-* _Drop-in replacement_ for [chalk](https://github.com/chalk/chalk).
 * _No dependencies_ 
-
 * _Safe_ - Does not modify the `String.prototype` like others.
 * Supports [nested colors](#nested-colors), **and does not have the [nested styling bug](#nested-styling-bug) that is present in [colorette](https://github.com/jorgebucaran/colorette), [chalk](https://github.com/chalk/chalk), and [kleur](https://github.com/lukeed/kleur)**.
 * Supports [chained colors](#chained-colors).
 * [Toggle color support](#toggle-color-support) on or off.
+
+#### Chrome 
+![chrome terminal color examples](https://raw.githubusercontent.com/RIAEvangelist/ansi-colors/master/img/vanilla-test-chrome-report.PNG)
+
+#### Edge
+![edge terminal color examples](https://raw.githubusercontent.com/RIAEvangelist/ansi-colors/master/img/vanilla-test-edge-report.PNG)
 
 ## Usage
 
@@ -180,8 +186,8 @@ console.log(ansi.success.bold('It worked!'));
 | --- | --- |  
 | 48 | [jonschlinkert](https://github.com/jonschlinkert) |  
 | 42 | [doowb](https://github.com/doowb) |  
+| 8  | [RIAEvangelist](https://github.com/RIAEvangelist) |
 | 6  | [lukeed](https://github.com/lukeed) | 
-| 4  | [RIAEvangelist](https://github.com/RIAEvangelist) | 
 | 2  | [Silic0nS0ldier](https://github.com/Silic0nS0ldier) |  
 | 1  | [dwieeb](https://github.com/dwieeb) |  
 | 1  | [jorgebucaran](https://github.com/jorgebucaran) |  
