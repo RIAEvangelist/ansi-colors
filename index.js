@@ -10,10 +10,6 @@ const ANSI_REGEX = /[\u001b\u009b][[\]#;?()]*(?:(?:(?:[^\W_]*;?[^\W_]*)\u0007)|(
 const create = () => {
   const colors = { enabled: true, visible: true, styles: {}, keys: {} };
 
-  if ('FORCE_COLOR' in process.env) {
-    colors.enabled = process.env.FORCE_COLOR !== '0';
-  }
-
   const ansi = style => {
     let open = style.open = `\u001b[${style.codes[0]}m`;
     let close = style.close = `\u001b[${style.codes[1]}m`;
@@ -168,9 +164,10 @@ const create = () => {
   colors.none = colors.clear = colors.noop;
 
   colors.stripColor = colors.unstyle;
-  colors.symbols = require('./symbols');
   colors.define = define;
   return colors;
 };
 
-export {create() as default, create};
+const instance=create();
+
+export {instance as default, create};
