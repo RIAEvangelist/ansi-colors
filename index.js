@@ -173,4 +173,4 @@ const create = () => {
   return colors;
 };
 
-exports {create() as default, create};
+export {create() as default, create};
